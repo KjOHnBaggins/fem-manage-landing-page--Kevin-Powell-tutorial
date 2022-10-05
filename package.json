@@ -1,15 +1,38 @@
 {
   "name": "fem-manage-landing-page--kevin-powell-tutorial",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KjOHnBaggins/fem-manage-landing-page--Kevin-Powell-tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KjOHnBaggins/fem-manage-landing-page--Kevin-Powell-tutorial/issues"
+  },
+  "homepage": "https://github.com/KjOHnBaggins/fem-manage-landing-page--Kevin-Powell-tutorial#readme",
   "devDependencies": {
-    "sass": "^1.54.9",
-    "vite": "^3.1.0"
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.2.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0"
   }
 }
